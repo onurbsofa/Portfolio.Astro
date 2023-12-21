@@ -5,25 +5,55 @@ import ProjectCard from '../components/ProjectCard.astro';
 
 <Layout title="Home">
 	<div class="pb-12 mt-5">
-		<div class="text-5xl font-bold">BoFoWeb</div>
-		<div class="py-2">
-		  <text class="text-lg">
-			programador web y Q&A tester
-		  </text>
+		<div class="flex flex-col p-9">
+			<h1 class="text-5xl font-bold">
+				BofoWeb
+			</h1>
+		
+			<div class="py-2">
+		 	 	<text class="text-lg">
+				programador web y Q&A tester
+		  		</text>
+			</div>
+			<div class="mt-8">
+		  		<a class="btn" href="mailto:brufazio8@gmail.com" target="_blank">
+					Contactame
+		  		</a>
+			</div>
+	</div>
+		<div class="card-wrapper">
+			<ProjectCard
+			title="Back To The Mesozoic",
+			desc="Mi primer juego wn godot",
+			img="/screens/back to the mesozoic.png",
+			link="https://mechabrain.itch.io/back-to-the-mezosoic"
+			/>
 		</div>
-		<div class="mt-8">
-		  <a class="btn" href="mailto:doneber.dev@gmail.com" target="_blank">
-			Contactame
-		  </a>
-		</div>
-		<div>
+		<div class="card-wrapper">
 			<ProjectCard
 			title="BoFoWeb",
 			desc="Mi portafolio personal",
-			img="/screens/bofoweb.png",
+			img="/screens/tostaocafe.png",
 			link="https://bofoweb.vercel.app/"
 			/>
 		</div>
-
+		<div class="card-wrapper">
+			<ProjectCard
+			title="BoFoWeb",
+			desc="Mi portafolio personal",
+			img="/screens/huerta nes.png",
+			link="https://bofoweb.vercel.app/"
+			/>
+		</div>
+		
 	  </div>
 </Layout>
+
+<style>
+	.card-wrapper {
+	  display: grid;
+	  gap: 16px;
+	  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	  padding-bottom: 3rem;
+	}
+</style>
