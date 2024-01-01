@@ -31,29 +31,34 @@ import ProjectCard from '../components/ProjectCard.astro';
 		</div>
 		<div class="card-wrapper">
 			<ProjectCard
-			title="BoFoWeb",
-			desc="Mi portafolio personal",
+			title=TosdtaoCAfe",
+			desc="Ecommerce Café",
 			img="/screens/tostaocafe.png",
-			link="https://bofoweb.vercel.app/"
+			link="https://tostao-coffe.onrender.com/"
 			/>
 		</div>
 		<div class="card-wrapper">
 			<ProjectCard
-			title="BoFoWeb",
-			desc="Mi portafolio personal",
+			title="Huerta NES",
+			desc="Proyecto educativo",
 			img="/screens/huerta nes.png",
-			link="https://bofoweb.vercel.app/"
+			link="https://onurbsofa.github.io/Huerta-NES/"
 			/>
 		</div>
 		
 	  </div>
 </Layout>
-
 <style>
 	.card-wrapper {
 	  display: grid;
 	  gap: 16px;
-	  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	  grid-template-columns: repeat(1, 1fr);
 	  padding-bottom: 3rem;
+	}
+	
+	@media (min-width: 640px) {
+	  .card-wrapper {
+		grid-template-columns: repeat(2, 1fr);
+	  }
 	}
 </style>
