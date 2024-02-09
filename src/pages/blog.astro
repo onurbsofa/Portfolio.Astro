@@ -1,9 +1,11 @@
 ---
 import PostLayout from "../layouts/PostLayout.astro";
-
 ---
 
-<PostLayout>
-  <h1>My Post</h1>
-  <p>This is my post.</p>
+<PostLayout title="Blog entries">
+  <h1>Blog entries</h1>
+  <ul>
+    <li><a href="/blog/first-post">First post</a></li>
+    <li><a href="/blog/second-post">Second post</a></li>
+  </ul>
 </PostLayout>
