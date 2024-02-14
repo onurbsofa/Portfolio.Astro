@@ -6,6 +6,7 @@ interface Props {
 const { title } = Astro.props;
 import "nes.css/css/nes.min.css";
 import Footer from "../blogComponents/Footer/Bfooter.astro";
+import Header from "../blogComponents/header/Bheader.astro";
 ---
 
 <!doctype html>
@@ -18,7 +19,8 @@ import Footer from "../blogComponents/Footer/Bfooter.astro";
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
+  <>
+    <Header />
     <main>
       <h1></h1>
       <slot />
