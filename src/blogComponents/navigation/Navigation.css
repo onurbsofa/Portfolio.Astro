@@ -1,0 +1,38 @@
+.nav-links{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0%;
+  gap: 1rem;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  
+}
+
+@media screen and (max-width: 636px) {
+  .nav-links {
+    margin-left: 5em;
+    display: none;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .expanded {
+    display: unset;
+  }
+}

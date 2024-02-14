@@ -5,11 +5,29 @@
 
 body {
   font-family: "Press Start 2P";
-  font-size: 16px;
-  background-color: #000;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #4a314d;
+  color: #cc5803;
+  padding: 1rem;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: grid;
+  grid:
+    "header" auto
+    "main" 1fr
+    "footer" auto;
+  gap: 1rem;
+}
+
+header {
+  grid-area: "header";
+}
+
+main {
+  grid-area: "main";
+}
+
+footer {
+  grid-area: "footer";
 }

@@ -6,7 +6,8 @@ interface Props {
 const { title } = Astro.props;
 import "nes.css/css/nes.min.css";
 import Footer from "../blogComponents/Footer/Bfooter.astro";
-import Header from "../blogComponents/header/Bheader.astro";
+import Navar from "../blogComponents/navigation/Navigation.astro";
+import Hamburger from "../blogComponents/Hamburger/Hamburger.astro";
 ---
 
 <!doctype html>
@@ -19,13 +20,19 @@ import Header from "../blogComponents/header/Bheader.astro";
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <>
-    <Header />
+  <body>
+    <header>
+      <Hamburger />
+      <Navar />
+    </header>
+
     <main>
       <h1></h1>
       <slot />
-      <link rel="stylesheet" href="/styles/global.css" />
     </main>
+
     <Footer />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <script src="../scripts/menuHamburger.js"></script>
   </body>
 </html>
