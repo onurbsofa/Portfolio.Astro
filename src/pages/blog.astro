@@ -1,16 +1,19 @@
 ---
 import BlogLayout from "../layouts/BlogLayout.astro";
+import PostCard from "../blogComponents/PostCard/PostCard.astro";
 const postsList = await Astro.glob("../pages/posts/*.md");
 ---
 
 <BlogLayout title="Blog entries">
-  <h1>Blog entries</h1>
-  <ul>
+  <ul class="post-list">
     {
       postsList.map((post) => (
         <li>
-          <a href={post.url}>{post.frontmatter.title}
-          </a>
+          <PostCard
+            image={post.frontmatter.image}
+            url={post.url}
+            title={post.frontmatter.title}
+          />
         </li>
       ))
     }

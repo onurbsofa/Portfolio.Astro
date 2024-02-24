@@ -31,3 +31,34 @@ main {
 footer {
   grid-area: "footer";
 }
+
+.post-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.nes-avatar {
+  border: 1px solid #ff6d00;
+}
+
+.tag-list-container {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nes-badge span.is-warning:first-child {
+  position: relative;
+  padding: 5px;
+}
+
+.nes-badge,
+.nes-badge:hover {
+  width: auto;
+  text-decoration: none;
+}
