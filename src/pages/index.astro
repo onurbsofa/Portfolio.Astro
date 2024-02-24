@@ -4,16 +4,14 @@ import ProjectCard from "../components/ProjectCard.astro";
 ---
 
 <Layout title="BoFoWeb">
-
   <div class="pb-12 mt-5">
     <div
       class="banner relative flex items-center justify-center h-screen text-white"
       style="background-image: url('/img/bannerbofoweb.png'); background-size: cover;"
     >
       <div>
-
         <h1 class="text-5xl font-bold">BofoWeb</h1>
-        
+
         <div class="py-2">
           <text class="text-lg"> programador web y Q&A tester</text>
         </div>
@@ -23,17 +21,17 @@ import ProjectCard from "../components/ProjectCard.astro";
             Contactame
           </a>
         </div>
-
       </div>
-
     </div>
   </div>
-
+  <div>
+    <h2 class="text-3xl font-bold pb-12 justify-center ml-12">Proyectos</h2>
+  </div>
   <div class="card-wrapper">
     <ProjectCard
       title="Back To The Mesozoic"
       ,
-      desc="Mi primer juego en godot"
+      desc="Mi primer juego en equipo"
       ,
       img="/screens/back to the mesozoic.png"
       ,
@@ -41,7 +39,7 @@ import ProjectCard from "../components/ProjectCard.astro";
     />
 
     <ProjectCard
-      title='TosdtaoCAfe",'
+      title="Tostao Café"
       desc="Ecommerce Café"
       ,
       img="/screens/tostaocafe.png"
@@ -59,7 +57,6 @@ import ProjectCard from "../components/ProjectCard.astro";
       link="https://onurbsofa.github.io/Huerta-NES/"
     />
   </div>
-
 </Layout>
 
 <style>
@@ -68,13 +65,13 @@ import ProjectCard from "../components/ProjectCard.astro";
     width: 100%;
     height: 300px;
     overflow: hidden;
-    border-radius:10px;
+    border-radius: 10px;
   }
 
   .card-wrapper {
     display: grid;
     gap: 16px;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     padding-bottom: 3rem;
   }
 
