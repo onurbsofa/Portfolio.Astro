@@ -2,3 +2,6 @@
 .post-link:hover {
   color: #3c096c;
 }
+.message-left {
+  display: flex;
+}

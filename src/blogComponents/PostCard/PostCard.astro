@@ -4,17 +4,18 @@ const { image, url, title } = Astro.props;
 ---
 
 <section class="nes-container is-dark">
-  <section class="message-list">
-    <section class="message -left">
+  <div class="message-list">
+    <div class="message-left">
       <img
         class="nes-avatar is-rounded is-large"
         alt={image.alt}
         src={image.url}
         style="image-rendering: pixelated;"
       />
+
       <div class="nes-balloon from-left">
         <a class="post-link" href={url}>{title}</a>
       </div>
-    </section>
-  </section>
+    </div>
+  </div>
 </section>
