@@ -5,7 +5,7 @@ const postsList = await Astro.glob("../pages/posts/*.md");
 ---
 
 <BlogLayout title="Blog entries">
-  <ul class="post-list">
+  <ul className="post-list">
     {
       postsList.map((post) => (
         <li>

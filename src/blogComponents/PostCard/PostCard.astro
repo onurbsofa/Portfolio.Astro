@@ -3,18 +3,18 @@ import "./PostCard.css";
 const { image, url, title } = Astro.props;
 ---
 
-<section class="nes-container is-dark">
-  <div class="message-list">
-    <div class="message-left">
+<section className="nes-container is-dark">
+  <div className="message-list">
+    <div className="message-left">
       <img
-        class="nes-avatar is-rounded is-large"
+        className="nes-avatar is-rounded is-large"
         alt={image.alt}
         src={image.url}
         style="image-rendering: pixelated;"
       />
 
-      <div class="nes-balloon from-left">
-        <a class="post-link" href={url}>{title}</a>
+      <div className="nes-balloon from-left">
+        <a className="post-link" href={url}>{title}</a>
       </div>
     </div>
   </div>

@@ -29,7 +29,7 @@ const { posts } = Astro.props;
 
 <BaseLayout title={tag}>
   <p>Posts de la categoría {tag}</p>
-  <ul class="post-list">
+  <ul className="post-list">
     {
       posts.map((post) => (
         <li>
